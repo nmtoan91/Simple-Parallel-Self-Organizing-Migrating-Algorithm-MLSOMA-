@@ -1,0 +1,8 @@
+#!/bin/bash
+#PBS -q qprod
+#PBS -l select=2:ncpus=16:mpiprocs=16:ompthreads=1,walltime=48:00:00
+#PBS -A OPEN-6-9
+module load openmpi
+cd AstroChaos
+mpiexec ./mpi_toan 
+exit

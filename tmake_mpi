@@ -1,0 +1,12 @@
+#!/bin/bash
+#chmod +x tmake 
+rm ./toan_mpi
+clear
+echo building
+#export PATH=$PATH:/usr/local/cuda-8.0/bin
+mpic++ -std=c++11 main.cpp MLSOMA.cpp MLSOMA2.cpp MPIMessage.cpp MPITool.cpp MSOMA.cpp SerializedSharedMemory.cpp SOMA_Sequence.cpp Source.cpp TDefine.cpp TestFunctions.cpp TimeAnalysis.cpp TOutput.cpp TVector.cpp -o toan_mpi -Wno-deprecated-gpu-targets
+#-gencode arch=compute_20,code=sm_20
+#cuda-gdb ./toan_mpig
+#run
+#where
+./toan_mpi

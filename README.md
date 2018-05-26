@@ -1,5 +1,4 @@
 # Simple-Parallel-Self-Organizing-Migrating-Algorithm-MLSOMA-
-SOMA Algorithm: Prof. Ivan Zelinka<br />
 MLSOMA version 1.0.2 :<br />
  -m    : Method (0|1)<br />
  [default = 0] -pop  : Pop size [default = 16]<br />
@@ -25,3 +24,8 @@ Run MLSOMA on single processor (512 dimensions, 16 pop-size, range from -512 to 
 	./MLSOMA -m 0 -d 512 -pop 16 -range 512<br />
 Run MLSOMA on multiple processors with mpiexec (32 cpu cpu-processors, 512 dimensions, 16 pop-size, range from -512 to 512):<br />
     mpiexec -n 32 ./MLSOMA -m 1 -d 512 -pop 16 -range 512<br />
+
+
+<br />
+<br />
+Zelinka, Ivan. "SOMA—self-organizing migrating algorithm." New optimization techniques in engineering. Springer, Berlin, Heidelberg, 2004. 167-217.
